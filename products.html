@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADT - Ace's Demon Tech</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="asset/img/logo.png" type="image/x-icon">
+    <script src="asset/js/hero.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ADT</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-text="Home">Home</a></li>
+                <li><a href="about.html" data-text="About">About</a></li>
+                <li><a href="products.html" data-text="Products">Products</a></li>
+                <li><a href="contact.html" data-text="Contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+    
+    <section>
+        <h1 style="color:white;">Product Page</h1>
+        <div class="search-sort">
+            <input type="text" id="search" placeholder="Search products...">
+            <select id="sort">
+                <option value="name">Sort by Name</option>
+                <option value="price">Sort by Price</option>
+            </select>
+        </div>
+    </section>
+
+    <section>
+        <div id="products"></div>
+    </section>
+    <aside>
+        <h2>Cart</h2>
+        <ul id="cart"></ul>
+        <button id="checkout">Checkout</button>
+    </aside>
+
+    <script src="asset/js/script.js"></script>
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+    </script>
+    
+</body>
+</html>

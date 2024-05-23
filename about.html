@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADT - Ace's Demon Tech</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="asset/img/logo.png" type="image/x-icon">
+    <script src="asset/js/hero.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ADT</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-text="Home">Home</a></li>
+                <li><a href="about.html" data-text="About">About</a></li>
+                <li><a href="products.html" data-text="Products">Products</a></li>
+                <li><a href="contact.html" data-text="Contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="about-section">
+        <div class="container">
+            <img src="asset/img/about.jpg" alt="" srcset="">
+            <h2>Our Journey</h2>
+            <p>Founded in the heart of Adamson University in 2023, ADT - Ace's Demon Tech began as a small startup with a big dream: 
+            to revolutionize the gaming industry. Our founders, a group of passionate gamers and tech enthusiasts, 
+            noticed a gap in the market for high-performance gaming technology that didn't compromise on innovation or design. 
+            From our humble beginnings in a cramped garage, we've grown into a leading name in gaming technology, known for our 
+            cutting-edge products that push the boundaries of what's possible.</p>
+    
+    
+            <h2>About ADT</h2>
+            <p>Welcome to ADT - Ace's Demon Tech, where the realms of technology and gaming converge in a symphony of innovation and passion. 
+            Brace yourself for an extraordinary journey as we invite you to unleash your inner demon gamer and explore a world of 
+            limitless possibilities.</p>
+
+            <h2>Connect With Us</h2>
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/ADTFacebookPage"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://twitter.com/ADTTwitterHandle"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/ADTInstagramHandle"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/ADTYouTubeChannel"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    
+    
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+    </script>
+    
+</body>
+</html>

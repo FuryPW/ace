@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADT - Ace's Demon Tech</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="icon" href="asset/img/logo.png" type="image/x-icon">
+    <script src="asset/js/hero.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">ADT</div>
+            <ul class="nav-links">
+                <li><a href="index.html" data-text="Home">Home</a></li>
+                <li><a href="about.html" data-text="About">About</a></li>
+                <li><a href="products.html" data-text="Products">Products</a></li>
+                <li><a href="contact.html" data-text="Contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Unleash Your Gaming Supremacy with ADT - Where Passion Meets Innovation</h1>
+            <h2>"ADT - Ace's Demon Tech: Ignite Your Triumph in the Gaming Universe"</h2>
+            <p>
+                Join us at ADT - Ace's Demon Tech and awaken the dormant power within.
+                Embrace the cutting-edge prowess of gaming technology and conquer the digital realm
+                with unwavering fortitude. Your gaming experience will be forever transformed,
+                transcending the boundaries of imagination and propelling you towards unparalleled victory.
+            </p>
+        </div>
+        <div class="hero-image">
+            <img src="asset/img/logo.png">
+        </div>
+    </section>
+    
+
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+    </script>
+    
+</body>
+</html>

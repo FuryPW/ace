@@ -1,0 +1,563 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Electrolize', sans-serif;
+    background: url('../img/bg-1.png') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+@keyframes bgTransition {
+    0% {
+        background: url('../img/bg-0.png') no-repeat center center fixed;
+        background-size: cover;
+    }
+    50% {
+        background: url('../img/bg-1.png') no-repeat center center fixed;
+        background-size: cover;
+    }
+    100% {
+        background: url('../img/bg-0.png') no-repeat center center fixed;
+        background-size: cover;
+    }
+}
+
+header {
+    background: #070303;
+    color: #fff;
+}
+
+.responsive-div {
+    width: 100%;
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px;
+    box-sizing: border-box; 
+  }
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #070303; 
+    padding: 20px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase; 
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: #ce2c32;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 22px;
+    padding: 10px 0; 
+    text-transform: uppercase; 
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: color 0.3s ease; 
+    transition: text-shadow 0.3s ease;
+}
+.nav-links a:hover {
+    color: #f71c23; 
+    text-shadow: 2px 2px #0e0e0e;
+}
+
+.nav-links a::before,
+.nav-links a::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #ce2c32;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+}
+
+.nav-links a::before {
+    animation: glitchTop 2s infinite linear;
+}
+
+.nav-links a::after {
+    animation: glitchBottom 1.5s infinite linear;
+}
+
+@keyframes glitchTop {
+    0% {
+        clip: rect(24px, 900px, 22px, 0);
+        transform: skew(0.5deg);
+    }
+    5% {
+        clip: rect(85px, 900px, 50px, 0);
+        transform: skew(0.5deg);
+    }
+    10% {
+        clip: rect(55px, 900px, 90px, 0);
+        transform: skew(0.5deg);
+    }
+    15% {
+        clip: rect(35px, 900px, 20px, 0);
+        transform: skew(0.5deg);
+    }
+    20% {
+        clip: rect(10px, 900px, 40px, 0);
+        transform: skew(0.5deg);
+    }
+    25% {
+        clip: rect(35px, 900px, 20px, 0);
+        transform: skew(0.5deg);
+    }
+    30% {
+        clip: rect(60px, 900px, 100px, 0);
+        transform: skew(0.5deg);
+    }
+    35% {
+        clip: rect(0px, 900px, 20px, 0);
+        transform: skew(0.5deg);
+    }
+    40% {
+        clip: rect(20px, 900px, 50px, 0);
+        transform: skew(0.5deg);
+    }
+    45% {
+        clip: rect(10px, 900px, 70px, 0);
+        transform: skew(0.5deg);
+    }
+    50% {
+        clip: rect(30px, 900px, 30px, 0);
+        transform: skew(0.5deg);
+    }
+    55% {
+        clip: rect(40px, 900px, 20px, 0);
+        transform: skew(0.5deg);
+    }
+    60% {
+        clip: rect(10px, 900px, 30px, 0);
+        transform: skew(0.5deg);
+    }
+    65% {
+        clip: rect(80px, 900px, 60px, 0);
+        transform: skew(0.5deg);
+    }
+    70% {
+        clip: rect(10px, 900px, 30px, 0);
+        transform: skew(0.5deg);
+    }
+    75% {
+        clip: rect(60px, 900px, 50px, 0);
+        transform: skew(0.5deg);
+    }
+    80% {
+        clip: rect(40px, 900px, 30px, 0);
+        transform: skew(0.5deg);
+    }
+    85% {
+        clip: rect(30px, 900px, 40px, 0);
+        transform: skew(0.5deg);
+    }
+    90% {
+        clip: rect(50px, 900px, 60px, 0);
+        transform: skew(0.5deg);
+    }
+    95% {
+        clip: rect(70px, 900px, 20px, 0);
+        transform: skew(0.5deg);
+    }
+    100% {
+        clip: rect(20px, 900px, 10px, 0);
+        transform: skew(0.5deg);
+    }
+}
+
+@keyframes glitchBottom {
+    0% {
+        clip: rect(85px, 900px, 85px, 0);
+        transform: skew(-0.5deg);
+    }
+    5% {
+        clip: rect(65px, 900px, 40px, 0);
+        transform: skew(-0.5deg);
+    }
+    10% {
+        clip: rect(55px, 900px, 40px, 0);
+        transform: skew(-0.5deg);
+    }
+    15% {
+        clip: rect(15px, 900px, 60px, 0);
+        transform: skew(-0.5deg);
+    }
+    20% {
+        clip: rect(20px, 900px, 60px, 0);
+        transform: skew(-0.5deg);
+    }
+    25% {
+        clip: rect(60px, 900px, 70px, 0);
+        transform: skew(-0.5deg);
+    }
+    30% {
+        clip: rect(40px, 900px, 10px, 0);
+        transform: skew(-0.5deg);
+    }
+    35% {
+        clip: rect(50px, 900px, 30px, 0);
+        transform: skew(-0.5deg);
+    }
+    40% {
+        clip: rect(40px, 900px, 50px, 0);
+        transform: skew(-0.5deg);
+    }
+    45% {
+        clip: rect(50px, 900px, 40px, 0);
+        transform: skew(-0.5deg);
+    }
+    50% {
+        clip: rect(40px, 900px, 60px, 0);
+        transform: skew(-0.5deg);
+    }
+    55% {
+        clip: rect(70px, 900px, 20px, 0);
+        transform: skew(-0.5deg);
+    }
+    60% {
+        clip: rect(60px, 900px, 50px, 0);
+        transform: skew(-0.5deg);
+    }
+    65% {
+        clip: rect(10px, 900px, 20px, 0);
+        transform: skew(-0.5deg);
+    }
+    70% {
+        clip: rect(40px, 900px, 30px, 0);
+        transform: skew(-0.5deg);
+    }
+    75% {
+        clip: rect(20px, 900px, 40px, 0);
+        transform: skew(-0.5deg);
+    }
+    80% {
+        clip: rect(50px, 900px, 10px, 0);
+        transform: skew(-0.5deg);
+    }
+    85% {
+        clip: rect(10px, 900px, 30px, 0);
+        transform: skew(-0.5deg);
+    }
+    90% {
+        clip: rect(20px, 900px, 20px, 0);
+        transform: skew(-0.5deg);
+    }
+    95% {
+        clip: rect(50px, 900px, 50px, 0);
+        transform: skew(-0.5deg);
+    }
+    100% {
+        clip: rect(30px, 900px, 10px, 0);
+        transform: skew(-0.5deg);
+    }
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background: white;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    color: white;
+    opacity: 0; /* Initially set opacity to 0 */
+    transition: opacity 0.5s ease-out; /* Smooth transition for opacity change */
+    
+}
+
+
+
+
+.hero-content {
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.hero-image {
+    margin-left: 50px; 
+}
+
+.hero-image img {
+    width: 300px; 
+}
+
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-section img {
+    display: block; /* Ensure the image is displayed as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-section h2 {
+    color: #fff; /* Set heading text color to white */
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #fff; /* Set paragraph text color to white */
+}
+
+.social-icons {
+    list-style: none;
+    padding: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons li:last-child {
+    margin-right: 0;
+}
+
+.social-icons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #ff0000; /* Set link color to red */
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #ff0000; /* Change background color to red on hover */
+    color: #fff; /* Set text color to white on hover */
+}
+
+
+.search-sort {
+    display: flex;
+    gap: 10px;
+}
+
+input, select {
+    background-color: #333;
+    color: white;
+    border: 1px solid red;
+    padding: 5px;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+.search-sort {
+    display: flex;
+    gap: 10px;
+}
+
+input, select {
+    background-color: #333;
+    color: white;
+    border: 1px solid #ce2c32;
+    padding: 5px;
+}
+
+input::placeholder {
+    color: #888;
+}
+
+section {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #444;
+    padding: 10px;
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.product img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.product label, .product input {
+    color: white;
+}
+
+aside {
+    width: 300px;
+    border-left: 1px solid #444;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+aside h2 {
+    color: #ce2c32;
+}
+
+#cart {
+    list-style: none;
+    padding: 0;
+}
+
+#cart li {
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #ce2c32;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4d4d;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #070303;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        padding: 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+    .hero {
+        flex-direction: column; 
+        align-items: center;
+        padding: 30px; 
+    }
+
+    .hero-image {
+        margin-left: 0;
+        margin-top: 20px; 
+    }
+
+    .hero-image img {
+        width: 100%; 
+    }
+
+    .hero-content {
+        text-align: center; 
+    }
+
+    .hero h1 {
+        font-size: 28px; 
+    }
+
+    .hero h2 {
+        font-size: 18px; 
+    }
+
+    .hero p {
+        font-size: 14px; 
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        background: url('../img/bg-0.png') no-repeat center center fixed;
+        animation: bgTransition 5s infinite;
+    }
+}
+
+
